@@ -1,0 +1,7 @@
+.hull-conversation__list .media.item {
+  cursor: pointer;
+}
+.hull-conversation__list .selected {
+  background: #22b24d;
+}
+

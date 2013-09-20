@@ -1,0 +1,25 @@
+<div class="modal hide fade" id='{{modalId}}'>
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>New Conversation</h3>
+  </div>
+  <div class="modal-body">
+    <form class='new-convo'>
+      <fieldset>
+        <input type='text' name='name' placeholder='Give it a name'/>
+        <select name='uid'>
+          {{#subjects}}
+          <option value="{{uid}}">{{name}}</option>
+          {{/subjects}}
+        </select>
+      </fieldset>
+      <fieldset>
+        <textarea class="input-block-level" name='message_body' placeholder='Type your message here...'></textarea>
+      </fieldset>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a class="btn" class="close" data-dismiss="modal" aria-hidden="true">Close</a>
+    <a class='btn btn-primary' data-hull-action="createNewConvo">Create</a>
+  </div>
+</div>

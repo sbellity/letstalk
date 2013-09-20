@@ -1,0 +1,14 @@
+{{> letstalk.header}}
+
+<div class="row">
+  <div class="span4">
+    <section data-hull-component="conversations/list@hull" data-hull-visibility='public' data-hull-uid="{{subject}}"></section>
+    <hr />
+  </div>
+  <div class="span8">
+    <section data-hull-component="conversations/thread@hull" {{#if convo}}data-hull-id="{{convo}}"{{/if}} data-hull-order="asc" data-hull-limit="0" data-hull-focus="false">
+    </section>
+  </div>
+</div>
+
+{{> letstalk.new}}
